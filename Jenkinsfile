@@ -7,6 +7,11 @@ stages {
      sh 'echo checking out'
    }
   }
+  stage ('webhook') {
+    steps { 
+      sh 'echo hello'
+    }
+  }  
 stage('Build') {
   steps {
 // Build the Java application (replace with your build commands)
