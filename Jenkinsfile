@@ -12,6 +12,11 @@ stages {
       sh 'echo hello'
     }
   }  
+  stage ('webhook2') {
+    steps { 
+      sh 'echo hello2'
+    }
+  }  
 stage('Build') {
   steps {
 // Build the Java application (replace with your build commands)
